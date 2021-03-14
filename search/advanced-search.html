@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Search</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+        <link rel="stylesheet" href="/css/global-styles.css">
+    </head>
+    <body class="advanced-search-page">
+        <div class="container-fluid header-section">
+            <div class="row section-page">
+                <div class="col-lg-10 col-sm-2 text-left">
+                    <div class="logo-block"></div>
+                </div>
+                <div class="col-lg-2 col-sm-2 text-right">
+                    <a href="/index.html">Google Search</a>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid main">
+            <div class="row section-page title-bar">
+                <div class="col">
+                    <label class="h2 secondary-heading">Advanced search</label>
+                </div>
+            </div>
+            <div class="row text-left section-page content">
+                <div class="col">
+                    <form action="https://google.com/search" class="text">
+                        <div class="form-group row align-content-left">
+                            <label class="col-sm-2 col-form-label col-form-label-sm">Find pages with...</label>
+                            <div class="col-sm-6">
+                            </div>
+                            <div class="col col-form-label">
+                                <b>To do this in the search box.</b>
+                            </div>
+                        </div>
+                        <div class="form-group row align-content-left">
+                            <label for="allTheseWordsField" class="col-sm-2 col-form-label col-form-label-sm field-label">all these words:</label>
+                            <div class="col-sm-6">
+                                <input id="allTheseWordsField" class="form-control" maxlength="2048" type="text" name="as_q">
+                            </div>
+                            <div class="col col-form-label field-desciption">
+                                Type the important words: <span class="pre">tri-colour rat terrier</span>
+                            </div>
+                        </div>
+                        <div class="form-group row align-content-left">
+                            <label for="exactWordField" class="col-sm-2 col-form-label col-form-label-sm field-label">this exact word or phrase:</label>
+                            <div class="col-sm-6">
+                                <input id="exactWordField" class="form-control" maxlength="2048" type="text" name="as_epq">
+                            </div>
+                            <div class="col col-form-label field-desciption">
+                                Put exact words in quotes: <span class="pre">"rat terrier"</span>
+                            </div>
+                        </div>
+                        <div class="form-group row align-content-left">
+                            <label for="anyTheseWordsField" class="col-sm-2 col-form-label col-form-label-sm field-label">any of these words:</label>
+                            <div class="col-sm-6">
+                                <input id="anyTheseWordsField" class="form-control" maxlength="2048" type="text" name="as_oq">
+                            </div>
+                            <div class="col col-form-label field-desciption">
+                                Type OR between all the words you want: <span class="pre">miniature OR standard</span>
+                            </div>
+                        </div>
+                        <div class="form-group row align-content-left">
+                            <label for="noneTheseWordsField" class="col-sm-2 col-form-label col-form-label-sm field-label">none of these words:</label>
+                            <div class="col-sm-6">
+                                <input id="noneTheseWordsField" class="form-control" maxlength="2048" type="text" name="as_eq">
+                            </div>
+                            <div class="col col-form-label field-desciption">
+                                Put a minus sign just before words that you don't want: <span class="pre">-rodent, -"Jack Russell"</span>
+                            </div>
+                        </div>
+                        <div class="form-group row text-right">
+                            <div class="col-sm-2"></div>
+                            <div class="col-sm-6">
+                                <input class="btn btn-primary btn-sm" type="submit" value="Advanced Search">
+                            </div>
+                            <div class="col">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
