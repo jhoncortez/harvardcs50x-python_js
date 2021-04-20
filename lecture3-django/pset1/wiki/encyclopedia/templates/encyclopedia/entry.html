@@ -1,0 +1,17 @@
+{% extends "encyclopedia/layout.html" %}
+
+{% block title %}
+    Page request for: {{page_request}}
+{% endblock %}
+
+{% block body %}
+    
+    {% if entry %}
+    <h1>Entry {{page_request}}</h1>
+    {{ entry }}
+    {% else %}
+    <h1>NO ENTRIES FOR {{page_request}}</h1>
+    <p classs="message error">requested page was not found</p>
+    {% endif %}
+
+{% endblock %}

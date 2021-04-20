@@ -1,0 +1,25 @@
+ <!--{% load static %}-->
+ <!DOCTYPE html>
+ <html lang="en">
+ 
+ <head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <!--link rel="stylesheet" href="{% static 'newyear/styles.css' %}"-->
+   <title>{{title}}</title>
+ </head>
+ 
+ <body>
+     <header>
+         <nav>
+             <ul class="nav-menu">
+                 <li class="menu-item"><a href="{% url 'tasks:index' %}">Home</a></li>
+                 <li class="menu-item"><a href="{% url 'tasks:add' %}">Add a New Task</a></li>
+             </ul>
+         </nav>
+     </header>
+     {% block body %}
+     {% endblock %}
+ </body>
+ 
+ </html>
