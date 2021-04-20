@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Search</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+        <link rel="stylesheet" href="/css/global-styles.css">
+    </head>
+    <body>
+        <div class="container-fluid">
+            <div class="row text-center justify-content-end section-page">
+                <div class="col-lg-3 col-sm-12">
+                    <div class="row">
+                        <div class="col"><a href="/image-search.html">Google Image Search</a></div>
+                        <div class="col"><a href="/advanced-search.html">Advanced search</a></div>
+                    </div>
+                </div>
+            </div>
+            <div class="row text-center section-page">
+                <div class="col">
+                    <img alt="google-search" height="120" src="https://www.google.com.co/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png"/>
+                </div>
+            </div>
+            <div class="row text-center section-page">
+                <div class="col">
+                    <form action="https://google.com/search" class="text">
+                        <div class="row align-content-center">
+                            <div class="col">
+                                <div class="form-group row justify-content-center">
+                                    <div class="col-lg-6 col-sm-12">
+                                        <div class="row row-section search-group">
+                                            <div class="col no-gutters">
+                                                <input id="search-field" class="form-control" maxlength="2048" type="text" name="q">
+                                            </div>
+                                        </div>
+                                        <div class="row row-section search-actions">
+                                            <div class="col no-gutters">
+                                                <input class="btn btn-light" type="submit" value="Google Search" name="btnK">
+                                                <input class="btn btn-light" type="submit" value="I'm Feeling Lucky" name="btnI">
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
